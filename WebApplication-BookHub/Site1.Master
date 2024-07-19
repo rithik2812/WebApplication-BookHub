@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.Master.designer.cs" Inherits="WebApplication_BookHub.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title>BookHub</title>
+    <link rel="stylesheet" type="text/css" href="Styles/Site.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <header>
+                <h1>BookHub</h1>
+                <div id="userProfile">
+                    <asp:ImageButton ID="imgUserProfile" runat="server" OnClick="imgUserProfile_Click" Width="50px" Height="50px" />
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="Home.aspx">Home</a></li>
+                        <li><a href="Books.aspx">Books</a></li>
+                        <li><a href="Contact.aspx">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
